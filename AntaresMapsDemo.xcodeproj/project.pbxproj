@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CC80D6F1FBA2B75003184FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC80D6E1FBA2B75003184FE /* AppDelegate.swift */; };
+		1CC80D711FBA2B75003184FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC80D701FBA2B75003184FE /* ViewController.swift */; };
+		1CC80D741FBA2B75003184FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC80D721FBA2B75003184FE /* Main.storyboard */; };
+		1CC80D761FBA2B75003184FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC80D751FBA2B75003184FE /* Assets.xcassets */; };
+		1CC80D791FBA2B75003184FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC80D771FBA2B75003184FE /* LaunchScreen.storyboard */; };
+		1CC80D841FBA2B75003184FE /* AntaresMapsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC80D831FBA2B75003184FE /* AntaresMapsDemoTests.swift */; };
+		1CC80D8F1FBA2B75003184FE /* AntaresMapsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC80D8E1FBA2B75003184FE /* AntaresMapsDemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CC80D801FBA2B75003184FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC80D631FBA2B74003184FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC80D6A1FBA2B74003184FE;
+			remoteInfo = AntaresMapsDemo;
+		};
+		1CC80D8B1FBA2B75003184FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC80D631FBA2B74003184FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC80D6A1FBA2B74003184FE;
+			remoteInfo = AntaresMapsDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CC80D6B1FBA2B74003184FE /* AntaresMapsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AntaresMapsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC80D6E1FBA2B75003184FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CC80D701FBA2B75003184FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1CC80D731FBA2B75003184FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CC80D751FBA2B75003184FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CC80D781FBA2B75003184FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CC80D7A1FBA2B75003184FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC80D7F1FBA2B75003184FE /* AntaresMapsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AntaresMapsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC80D831FBA2B75003184FE /* AntaresMapsDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntaresMapsDemoTests.swift; sourceTree = "<group>"; };
+		1CC80D851FBA2B75003184FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC80D8A1FBA2B75003184FE /* AntaresMapsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AntaresMapsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC80D8E1FBA2B75003184FE /* AntaresMapsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntaresMapsDemoUITests.swift; sourceTree = "<group>"; };
+		1CC80D901FBA2B75003184FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CC80D681FBA2B74003184FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC80D7C1FBA2B75003184FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC80D871FBA2B75003184FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CC80D621FBA2B74003184FE = {
+			isa = PBXGroup;
+			children = (
+				1CC80D6D1FBA2B74003184FE /* AntaresMapsDemo */,
+				1CC80D821FBA2B75003184FE /* AntaresMapsDemoTests */,
+				1CC80D8D1FBA2B75003184FE /* AntaresMapsDemoUITests */,
+				1CC80D6C1FBA2B74003184FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CC80D6C1FBA2B74003184FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CC80D6B1FBA2B74003184FE /* AntaresMapsDemo.app */,
+				1CC80D7F1FBA2B75003184FE /* AntaresMapsDemoTests.xctest */,
+				1CC80D8A1FBA2B75003184FE /* AntaresMapsDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CC80D6D1FBA2B74003184FE /* AntaresMapsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1CC80D6E1FBA2B75003184FE /* AppDelegate.swift */,
+				1CC80D701FBA2B75003184FE /* ViewController.swift */,
+				1CC80D721FBA2B75003184FE /* Main.storyboard */,
+				1CC80D751FBA2B75003184FE /* Assets.xcassets */,
+				1CC80D771FBA2B75003184FE /* LaunchScreen.storyboard */,
+				1CC80D7A1FBA2B75003184FE /* Info.plist */,
+			);
+			path = AntaresMapsDemo;
+			sourceTree = "<group>";
+		};
+		1CC80D821FBA2B75003184FE /* AntaresMapsDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CC80D831FBA2B75003184FE /* AntaresMapsDemoTests.swift */,
+				1CC80D851FBA2B75003184FE /* Info.plist */,
+			);
+			path = AntaresMapsDemoTests;
+			sourceTree = "<group>";
+		};
+		1CC80D8D1FBA2B75003184FE /* AntaresMapsDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CC80D8E1FBA2B75003184FE /* AntaresMapsDemoUITests.swift */,
+				1CC80D901FBA2B75003184FE /* Info.plist */,
+			);
+			path = AntaresMapsDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CC80D6A1FBA2B74003184FE /* AntaresMapsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC80D931FBA2B75003184FE /* Build configuration list for PBXNativeTarget "AntaresMapsDemo" */;
+			buildPhases = (
+				1CC80D671FBA2B74003184FE /* Sources */,
+				1CC80D681FBA2B74003184FE /* Frameworks */,
+				1CC80D691FBA2B74003184FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AntaresMapsDemo;
+			productName = AntaresMapsDemo;
+			productReference = 1CC80D6B1FBA2B74003184FE /* AntaresMapsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CC80D7E1FBA2B75003184FE /* AntaresMapsDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC80D961FBA2B75003184FE /* Build configuration list for PBXNativeTarget "AntaresMapsDemoTests" */;
+			buildPhases = (
+				1CC80D7B1FBA2B75003184FE /* Sources */,
+				1CC80D7C1FBA2B75003184FE /* Frameworks */,
+				1CC80D7D1FBA2B75003184FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC80D811FBA2B75003184FE /* PBXTargetDependency */,
+			);
+			name = AntaresMapsDemoTests;
+			productName = AntaresMapsDemoTests;
+			productReference = 1CC80D7F1FBA2B75003184FE /* AntaresMapsDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CC80D891FBA2B75003184FE /* AntaresMapsDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC80D991FBA2B75003184FE /* Build configuration list for PBXNativeTarget "AntaresMapsDemoUITests" */;
+			buildPhases = (
+				1CC80D861FBA2B75003184FE /* Sources */,
+				1CC80D871FBA2B75003184FE /* Frameworks */,
+				1CC80D881FBA2B75003184FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC80D8C1FBA2B75003184FE /* PBXTargetDependency */,
+			);
+			name = AntaresMapsDemoUITests;
+			productName = AntaresMapsDemoUITests;
+			productReference = 1CC80D8A1FBA2B75003184FE /* AntaresMapsDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CC80D631FBA2B74003184FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Gazdag Imre";
+				TargetAttributes = {
+					1CC80D6A1FBA2B74003184FE = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					1CC80D7E1FBA2B75003184FE = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1CC80D6A1FBA2B74003184FE;
+					};
+					1CC80D891FBA2B75003184FE = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1CC80D6A1FBA2B74003184FE;
+					};
+				};
+			};
+			buildConfigurationList = 1CC80D661FBA2B74003184FE /* Build configuration list for PBXProject "AntaresMapsDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CC80D621FBA2B74003184FE;
+			productRefGroup = 1CC80D6C1FBA2B74003184FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CC80D6A1FBA2B74003184FE /* AntaresMapsDemo */,
+				1CC80D7E1FBA2B75003184FE /* AntaresMapsDemoTests */,
+				1CC80D891FBA2B75003184FE /* AntaresMapsDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CC80D691FBA2B74003184FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC80D791FBA2B75003184FE /* LaunchScreen.storyboard in Resources */,
+				1CC80D761FBA2B75003184FE /* Assets.xcassets in Resources */,
+				1CC80D741FBA2B75003184FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC80D7D1FBA2B75003184FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC80D881FBA2B75003184FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CC80D671FBA2B74003184FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC80D711FBA2B75003184FE /* ViewController.swift in Sources */,
+				1CC80D6F1FBA2B75003184FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC80D7B1FBA2B75003184FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC80D841FBA2B75003184FE /* AntaresMapsDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC80D861FBA2B75003184FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC80D8F1FBA2B75003184FE /* AntaresMapsDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CC80D811FBA2B75003184FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CC80D6A1FBA2B74003184FE /* AntaresMapsDemo */;
+			targetProxy = 1CC80D801FBA2B75003184FE /* PBXContainerItemProxy */;
+		};
+		1CC80D8C1FBA2B75003184FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CC80D6A1FBA2B74003184FE /* AntaresMapsDemo */;
+			targetProxy = 1CC80D8B1FBA2B75003184FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CC80D721FBA2B75003184FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CC80D731FBA2B75003184FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CC80D771FBA2B75003184FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CC80D781FBA2B75003184FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CC80D911FBA2B75003184FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CC80D921FBA2B75003184FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CC80D941FBA2B75003184FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UC4MN29G2A;
+				INFOPLIST_FILE = AntaresMapsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AntaresNav.AntaresMapsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CC80D951FBA2B75003184FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UC4MN29G2A;
+				INFOPLIST_FILE = AntaresMapsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AntaresNav.AntaresMapsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1CC80D971FBA2B75003184FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UC4MN29G2A;
+				INFOPLIST_FILE = AntaresMapsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AntaresNav.AntaresMapsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AntaresMapsDemo.app/AntaresMapsDemo";
+			};
+			name = Debug;
+		};
+		1CC80D981FBA2B75003184FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UC4MN29G2A;
+				INFOPLIST_FILE = AntaresMapsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AntaresNav.AntaresMapsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AntaresMapsDemo.app/AntaresMapsDemo";
+			};
+			name = Release;
+		};
+		1CC80D9A1FBA2B75003184FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UC4MN29G2A;
+				INFOPLIST_FILE = AntaresMapsDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AntaresNav.AntaresMapsDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AntaresMapsDemo;
+			};
+			name = Debug;
+		};
+		1CC80D9B1FBA2B75003184FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UC4MN29G2A;
+				INFOPLIST_FILE = AntaresMapsDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AntaresNav.AntaresMapsDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AntaresMapsDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CC80D661FBA2B74003184FE /* Build configuration list for PBXProject "AntaresMapsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC80D911FBA2B75003184FE /* Debug */,
+				1CC80D921FBA2B75003184FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC80D931FBA2B75003184FE /* Build configuration list for PBXNativeTarget "AntaresMapsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC80D941FBA2B75003184FE /* Debug */,
+				1CC80D951FBA2B75003184FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC80D961FBA2B75003184FE /* Build configuration list for PBXNativeTarget "AntaresMapsDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC80D971FBA2B75003184FE /* Debug */,
+				1CC80D981FBA2B75003184FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC80D991FBA2B75003184FE /* Build configuration list for PBXNativeTarget "AntaresMapsDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC80D9A1FBA2B75003184FE /* Debug */,
+				1CC80D9B1FBA2B75003184FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CC80D631FBA2B74003184FE /* Project object */;
+}

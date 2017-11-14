@@ -14,6 +14,9 @@
 		1CC80D791FBA2B75003184FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC80D771FBA2B75003184FE /* LaunchScreen.storyboard */; };
 		1CC80D841FBA2B75003184FE /* AntaresMapsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC80D831FBA2B75003184FE /* AntaresMapsDemoTests.swift */; };
 		1CC80D8F1FBA2B75003184FE /* AntaresMapsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC80D8E1FBA2B75003184FE /* AntaresMapsDemoUITests.swift */; };
+		687F58D4003B243273081D5F /* Pods_AntaresMapsDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885CB60608915A9BA0495F99 /* Pods_AntaresMapsDemoTests.framework */; };
+		7CDB9099AE768560627A4713 /* Pods_AntaresMapsDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44C716D33A48A9DB3CD7931 /* Pods_AntaresMapsDemoUITests.framework */; };
+		C019A9441DF6AF81546F294B /* Pods_AntaresMapsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6B9D6F0360DADCECAEC520 /* Pods_AntaresMapsDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,16 @@
 		1CC80D8A1FBA2B75003184FE /* AntaresMapsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AntaresMapsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC80D8E1FBA2B75003184FE /* AntaresMapsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntaresMapsDemoUITests.swift; sourceTree = "<group>"; };
 		1CC80D901FBA2B75003184FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC80D9D1FBA3136003184FE /* AntaresMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AntaresMaps.framework; path = "../antares-maps-ios/AntaresMaps.framework"; sourceTree = "<group>"; };
+		2723D60D01CE2591D97F8C53 /* Pods-AntaresMapsDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntaresMapsDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AntaresMapsDemoUITests/Pods-AntaresMapsDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F6B9D6F0360DADCECAEC520 /* Pods_AntaresMapsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AntaresMapsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74285A09225F06651C4301D8 /* Pods-AntaresMapsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntaresMapsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AntaresMapsDemo/Pods-AntaresMapsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8670F9E9E35F329EE72AB6C0 /* Pods-AntaresMapsDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntaresMapsDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AntaresMapsDemoTests/Pods-AntaresMapsDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		885CB60608915A9BA0495F99 /* Pods_AntaresMapsDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AntaresMapsDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07FF1760596EEACDD466918 /* Pods-AntaresMapsDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntaresMapsDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AntaresMapsDemoUITests/Pods-AntaresMapsDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B44C716D33A48A9DB3CD7931 /* Pods_AntaresMapsDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AntaresMapsDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6543E487D5754E4FAA850C1 /* Pods-AntaresMapsDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntaresMapsDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AntaresMapsDemoTests/Pods-AntaresMapsDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBD4EEEFE28F413871715184 /* Pods-AntaresMapsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntaresMapsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AntaresMapsDemo/Pods-AntaresMapsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C019A9441DF6AF81546F294B /* Pods_AntaresMapsDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				687F58D4003B243273081D5F /* Pods_AntaresMapsDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CDB9099AE768560627A4713 /* Pods_AntaresMapsDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,8 @@
 				1CC80D821FBA2B75003184FE /* AntaresMapsDemoTests */,
 				1CC80D8D1FBA2B75003184FE /* AntaresMapsDemoUITests */,
 				1CC80D6C1FBA2B74003184FE /* Products */,
+				CBC06CB742301E8D5F60969A /* Pods */,
+				4F6B7D07506215611D8F1346 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +143,30 @@
 			path = AntaresMapsDemoUITests;
 			sourceTree = "<group>";
 		};
+		4F6B7D07506215611D8F1346 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CC80D9D1FBA3136003184FE /* AntaresMaps.framework */,
+				5F6B9D6F0360DADCECAEC520 /* Pods_AntaresMapsDemo.framework */,
+				885CB60608915A9BA0495F99 /* Pods_AntaresMapsDemoTests.framework */,
+				B44C716D33A48A9DB3CD7931 /* Pods_AntaresMapsDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBC06CB742301E8D5F60969A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBD4EEEFE28F413871715184 /* Pods-AntaresMapsDemo.debug.xcconfig */,
+				74285A09225F06651C4301D8 /* Pods-AntaresMapsDemo.release.xcconfig */,
+				B6543E487D5754E4FAA850C1 /* Pods-AntaresMapsDemoTests.debug.xcconfig */,
+				8670F9E9E35F329EE72AB6C0 /* Pods-AntaresMapsDemoTests.release.xcconfig */,
+				2723D60D01CE2591D97F8C53 /* Pods-AntaresMapsDemoUITests.debug.xcconfig */,
+				B07FF1760596EEACDD466918 /* Pods-AntaresMapsDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CC80D931FBA2B75003184FE /* Build configuration list for PBXNativeTarget "AntaresMapsDemo" */;
 			buildPhases = (
+				AC2B05B3797D7131EB83CD4E /* [CP] Check Pods Manifest.lock */,
 				1CC80D671FBA2B74003184FE /* Sources */,
 				1CC80D681FBA2B74003184FE /* Frameworks */,
 				1CC80D691FBA2B74003184FE /* Resources */,
+				E2AF82B2FCF8B732BC426A94 /* [CP] Embed Pods Frameworks */,
+				1D9EC236E0CBA519C3784A56 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CC80D961FBA2B75003184FE /* Build configuration list for PBXNativeTarget "AntaresMapsDemoTests" */;
 			buildPhases = (
+				8A839EE7C70EE8144BCD3E0F /* [CP] Check Pods Manifest.lock */,
 				1CC80D7B1FBA2B75003184FE /* Sources */,
 				1CC80D7C1FBA2B75003184FE /* Frameworks */,
 				1CC80D7D1FBA2B75003184FE /* Resources */,
+				7F1C358EBF0015FA381E0B18 /* [CP] Embed Pods Frameworks */,
+				46097E0B42F540B87D442DDC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CC80D991FBA2B75003184FE /* Build configuration list for PBXNativeTarget "AntaresMapsDemoUITests" */;
 			buildPhases = (
+				92E4319307E1F17BC403DC2F /* [CP] Check Pods Manifest.lock */,
 				1CC80D861FBA2B75003184FE /* Sources */,
 				1CC80D871FBA2B75003184FE /* Frameworks */,
 				1CC80D881FBA2B75003184FE /* Resources */,
+				D6D301B32B36536623C63401 /* [CP] Embed Pods Frameworks */,
+				11C117F521CF75C2D76184E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +304,168 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11C117F521CF75C2D76184E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntaresMapsDemoUITests/Pods-AntaresMapsDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D9EC236E0CBA519C3784A56 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntaresMapsDemo/Pods-AntaresMapsDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46097E0B42F540B87D442DDC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntaresMapsDemoTests/Pods-AntaresMapsDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F1C358EBF0015FA381E0B18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntaresMapsDemoTests/Pods-AntaresMapsDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A839EE7C70EE8144BCD3E0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AntaresMapsDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92E4319307E1F17BC403DC2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AntaresMapsDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2B05B3797D7131EB83CD4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AntaresMapsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6D301B32B36536623C63401 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntaresMapsDemoUITests/Pods-AntaresMapsDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2AF82B2FCF8B732BC426A94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AntaresMapsDemo/Pods-AntaresMapsDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${PODS_ROOT}/AntaresMaps/AntaresMaps.framework",
+				"${BUILT_PRODUCTS_DIR}/GzipSwift/Gzip.framework",
+				"${BUILT_PRODUCTS_DIR}/ProtocolBuffers-Swift/ProtocolBuffers.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Track/Track.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AntaresMaps.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gzip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtocolBuffers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Track.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntaresMapsDemo/Pods-AntaresMapsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1CC80D671FBA2B74003184FE /* Sources */ = {
@@ -424,10 +637,12 @@
 		};
 		1CC80D941FBA2B75003184FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBD4EEEFE28F413871715184 /* Pods-AntaresMapsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UC4MN29G2A;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AntaresMapsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AntaresNav.AntaresMapsDemo;
@@ -439,10 +654,12 @@
 		};
 		1CC80D951FBA2B75003184FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74285A09225F06651C4301D8 /* Pods-AntaresMapsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UC4MN29G2A;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AntaresMapsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AntaresNav.AntaresMapsDemo;
@@ -454,6 +671,7 @@
 		};
 		1CC80D971FBA2B75003184FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6543E487D5754E4FAA850C1 /* Pods-AntaresMapsDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +689,7 @@
 		};
 		1CC80D981FBA2B75003184FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8670F9E9E35F329EE72AB6C0 /* Pods-AntaresMapsDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +707,7 @@
 		};
 		1CC80D9A1FBA2B75003184FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2723D60D01CE2591D97F8C53 /* Pods-AntaresMapsDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +724,7 @@
 		};
 		1CC80D9B1FBA2B75003184FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B07FF1760596EEACDD466918 /* Pods-AntaresMapsDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AMMapViewDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/AMMapViewDelegate" class="dashAnchor"></a>
+    <a title="AMMapViewDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AMMapViewDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraPosition.html">AMCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraPosition/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraUpdate.html">AMCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCoordinateBounds.html">AMCoordinateBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCoordinateBounds/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMMapView.html">AMMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMMarker.html">AMMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMPolyline.html">AMPolyline</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMProjection.html">AMProjection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMUISettings.html">AMUISettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMVisibleRegion.html">AMVisibleRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AntaresMapOptions.html">AntaresMapOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AMMapViewDelegate.html">AMMapViewDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AMMapViewDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AMMapViewDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Delegate for events on AMMapView.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps17AMMapViewDelegateP8willMoveyAA0cD0C03mapD0_Sb7gesturetF"></a>
+                    <a name="//apple_ref/swift/Method/willMove(mapView:gesture:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps17AMMapViewDelegateP8willMoveyAA0cD0C03mapD0_Sb7gesturetF">willMove(mapView:gesture:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called before the camera on the map changes, either due to a gesture, animation (e.g., by a user
+ tapping on the <q>My Location</q> button) or by being updated explicitly via the camera or a zero-length
+ animation on layer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">willMove</span><span class="p">(</span><span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMMapView.html">AMMapView</a></span><span class="p">,</span> <span class="nv">gesture</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>gesture</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If YES, this is occuring due to a user gesture.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps17AMMapViewDelegateP23didChangeCameraPositionyAA0cD0C03mapD0_AA08AMCameraI0C8positiontF"></a>
+                    <a name="//apple_ref/swift/Method/didChangeCameraPosition(mapView:position:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps17AMMapViewDelegateP23didChangeCameraPositionyAA0cD0C03mapD0_AA08AMCameraI0C8positiontF">didChangeCameraPosition(mapView:position:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called repeatedly during any animations or gestures on the map (or once, if the camera is explicitly set).
+This may not be called for all intermediate camera positions. It is always called for the final position
+of an animation or gesture.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">didChangeCameraPosition</span><span class="p">(</span><span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMMapView.html">AMMapView</a></span><span class="p">,</span> <span class="nv">position</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMCameraPosition.html">AMCameraPosition</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps17AMMapViewDelegateP20idleAtCameraPositionyAA0cD0C03mapD0_AA08AMCameraI0C8positiontF"></a>
+                    <a name="//apple_ref/swift/Method/idleAtCameraPosition(mapView:position:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps17AMMapViewDelegateP20idleAtCameraPositionyAA0cD0C03mapD0_AA08AMCameraI0C8positiontF">idleAtCameraPosition(mapView:position:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the map becomes idle, after any outstanding gestures or animations have completed
+(or after the camera has been explicitly set).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">idleAtCameraPosition</span><span class="p">(</span><span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMMapView.html">AMMapView</a></span><span class="p">,</span> <span class="nv">position</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMCameraPosition.html">AMCameraPosition</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps17AMMapViewDelegateP18didTapAtCoordinateyAA0cD0C03mapD0_SC22CLLocationCoordinate2DV10coordinatetF"></a>
+                    <a name="//apple_ref/swift/Method/didTapAtCoordinate(mapView:coordinate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps17AMMapViewDelegateP18didTapAtCoordinateyAA0cD0C03mapD0_SC22CLLocationCoordinate2DV10coordinatetF">didTapAtCoordinate(mapView:coordinate:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called after a tap gesture at a particular coordinate, but only if a marker was not tapped.
+This is called before deselecting any currently selected marker (the implicit action for tapping on the map).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">didTapAtCoordinate</span><span class="p">(</span><span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMMapView.html">AMMapView</a></span><span class="p">,</span> <span class="nv">coordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps17AMMapViewDelegateP24didLongPressAtCoordinateyAA0cD0C03mapD0_SC22CLLocationCoordinate2DV9oordinatetF"></a>
+                    <a name="//apple_ref/swift/Method/didLongPressAtCoordinate(mapView:oordinate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps17AMMapViewDelegateP24didLongPressAtCoordinateyAA0cD0C03mapD0_SC22CLLocationCoordinate2DV9oordinatetF">didLongPressAtCoordinate(mapView:oordinate:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called after a long-press gesture at a particular coordinate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">didLongPressAtCoordinate</span><span class="p">(</span><span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMMapView.html">AMMapView</a></span><span class="p">,</span> <span class="nv">oordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external">AntaresNav</a>. All rights reserved. (Last updated: 2017-11-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

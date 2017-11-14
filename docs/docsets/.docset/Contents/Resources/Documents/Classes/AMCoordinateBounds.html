@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AMCoordinateBounds Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/AMCoordinateBounds" class="dashAnchor"></a>
+    <a title="AMCoordinateBounds Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AMCoordinateBounds Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraPosition.html">AMCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraPosition/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraUpdate.html">AMCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCoordinateBounds.html">AMCoordinateBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCoordinateBounds/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMMapView.html">AMMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMMarker.html">AMMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMPolyline.html">AMPolyline</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMProjection.html">AMProjection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMUISettings.html">AMUISettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMVisibleRegion.html">AMVisibleRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AntaresMapOptions.html">AntaresMapOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AMMapViewDelegate.html">AMMapViewDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AMCoordinateBounds</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">AMCoordinateBounds</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                </div>
+              </div>
+            <p>An immutable class representing a latitude/longitude aligned rectangle.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps18AMCoordinateBoundsC9southwestSC22CLLocationCoordinate2DVv"></a>
+                    <a name="//apple_ref/swift/Property/southwest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps18AMCoordinateBoundsC9southwestSC22CLLocationCoordinate2DVv">southwest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The South-West corner of these bounds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">southwest</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps18AMCoordinateBoundsC9northeastSC22CLLocationCoordinate2DVv"></a>
+                    <a name="//apple_ref/swift/Property/northeast" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps18AMCoordinateBoundsC9northeastSC22CLLocationCoordinate2DVv">northeast</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The North-East corner of these bounds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">northeast</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps18AMCoordinateBoundsCACSC22CLLocationCoordinate2DV9southwest_AE9northeasttcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(southwest:northeast:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps18AMCoordinateBoundsCACSC22CLLocationCoordinate2DV9southwest_AE9northeasttcfc">init(southwest:northeast:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new bounds based on a southwest and a northeast corner.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">southwest</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">,</span> <span class="nv">northeast</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>southwest</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>southwest corner</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>northeast</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>northeast corner</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps18AMCoordinateBoundsC6centerSC22CLLocationCoordinate2DVv"></a>
+                    <a name="//apple_ref/swift/Property/center" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps18AMCoordinateBoundsC6centerSC22CLLocationCoordinate2DVv">center</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the center of this AMCoordinateBounds. The center is simply the average of the coordinates
+ (taking into account if it crosses the antimeridian). This is approximately the geographical
+ center (it would be exact if the Earth were a perfect sphere). It will not necessarily be
+ the center of the rectangle as drawn on the map due to the Mercator projection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">center</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A CLLocationCoordinate2D that is the center of the AMCoordinateBounds.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps18AMCoordinateBoundsC8containsSbSC22CLLocationCoordinate2DV5point_tF"></a>
+                    <a name="//apple_ref/swift/Method/contains(point:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps18AMCoordinateBoundsC8containsSbSC22CLLocationCoordinate2DV5point_tF">contains(point:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns whether this contains the given CLLocationCoordinate2D.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">contains</span><span class="p">(</span><span class="nv">point</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>point</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the CLLocationCoordinate2D to test</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if this contains the given point; false if not.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps18AMCoordinateBoundsC9includingACSC22CLLocationCoordinate2DV5point_tF"></a>
+                    <a name="//apple_ref/swift/Method/including(point:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps18AMCoordinateBoundsC9includingACSC22CLLocationCoordinate2DV5point_tF">including(point:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a new AMCoordinateBounds that extends this AMCoordinateBounds to include the
+ given CLLocationCoordinate2D.
+ This will return the smallest AMCoordinateBounds that contains both this and the extra point.</p>
+
+<p>In particular, it will consider extending the bounds both in the eastward and westward
+ directions (one of which may cross the antimeridian) and choose the smaller of the two.
+ In the case that both directions result in a LatLngBounds of the same size, this will
+ extend it in the eastward direction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">including</span><span class="p">(</span><span class="nv">point</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AMCoordinateBounds</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>point</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A CLLocationCoordinate2D to be included in the new bounds</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new AMCoordinateBounds that contains this and the extra point.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s9EquatableP2eeoiSbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s9EquatableP2eeoiSbx_xtFZ">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">AMCoordinateBounds</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">AMCoordinateBounds</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s8HashableP9hashValueSiv"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s8HashableP9hashValueSiv">hashValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s23CustomStringConvertibleP11descriptionSSv"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s23CustomStringConvertibleP11descriptionSSv">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps18AMCoordinateBoundsC7builderAC7BuilderCyFZ"></a>
+                    <a name="//apple_ref/swift/Method/builder()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps18AMCoordinateBoundsC7builderAC7BuilderCyFZ">builder()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new builder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">builder</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">AMCoordinateBounds</span><span class="o">.</span><span class="kt"><a href="../Classes/AMCoordinateBounds/Builder.html">Builder</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>AMCoordinateBounds.Builder</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps18AMCoordinateBoundsC7BuilderC"></a>
+                    <a name="//apple_ref/swift/Class/Builder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps18AMCoordinateBoundsC7BuilderC">Builder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is a builder that is able to create a minimum bound based on a set of LatLng points.</p>
+
+                        <a href="../Classes/AMCoordinateBounds/Builder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Builder</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external">AntaresNav</a>. All rights reserved. (Last updated: 2017-11-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

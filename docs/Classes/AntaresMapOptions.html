@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AntaresMapOptions Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/AntaresMapOptions" class="dashAnchor"></a>
+    <a title="AntaresMapOptions Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AntaresMapOptions Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraPosition.html">AMCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraPosition/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraUpdate.html">AMCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCoordinateBounds.html">AMCoordinateBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCoordinateBounds/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMMapView.html">AMMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMMarker.html">AMMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMPolyline.html">AMPolyline</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMProjection.html">AMProjection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMUISettings.html">AMUISettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMVisibleRegion.html">AMVisibleRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AntaresMapOptions.html">AntaresMapOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AMMapViewDelegate.html">AMMapViewDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AntaresMapOptions</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">AntaresMapOptions</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                </div>
+              </div>
+            <p>Defines configuration AntaresMapOptions for a AntaresMap. These options can be used when adding
+a map to your application programmatically (as opposed to via XML). If you are using a MapFragment,
+you can pass these options in using the static factory method newInstance(AntaresMapOptions).
+If you are using a AMMapView, you can pass these options in using the constructor
+AMMapView(CGRect, AntaresMapOptions).</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC6cameraAcA16AMCameraPositionCAD_tF"></a>
+                    <a name="//apple_ref/swift/Method/camera(camera:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC6cameraAcA16AMCameraPositionCAD_tF">camera(camera:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies a the initial camera position for the map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">camera</span><span class="p">(</span><span class="nv">camera</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMCameraPosition.html">AMCameraPosition</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AntaresMapOptions</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>camera</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Initial camera position</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>this AntaresMapOptions object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC8styleUrlACSSAD_tF"></a>
+                    <a name="//apple_ref/swift/Method/styleUrl(styleUrl:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC8styleUrlACSSAD_tF">styleUrl(styleUrl:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the style url associated with the map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">styleUrl</span><span class="p">(</span><span class="nv">styleUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AntaresMapOptions</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>styleUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Url to be used to load the style</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>this AntaresMapOptions object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC17minZoomPreferenceACSdAD_tF"></a>
+                    <a name="//apple_ref/swift/Method/minZoomPreference(minZoomPreference:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC17minZoomPreferenceACSdAD_tF">minZoomPreference(minZoomPreference:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies a preferred lower bound for camera zoom.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">minZoomPreference</span><span class="p">(</span><span class="nv">minZoomPreference</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AntaresMapOptions</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>minZoomPreference</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The preferred lower bound.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>this AntaresMapOptions object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC17maxZoomPreferenceACSdAD_tF"></a>
+                    <a name="//apple_ref/swift/Method/maxZoomPreference(maxZoomPreference:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC17maxZoomPreferenceACSdAD_tF">maxZoomPreference(maxZoomPreference:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies a preferred upper bound for camera zoom.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">maxZoomPreference</span><span class="p">(</span><span class="nv">maxZoomPreference</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AntaresMapOptions</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxZoomPreference</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The preferred upper bound.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>this AntaresMapOptions object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC21rotateGesturesEnabledACSb7enabled_tF"></a>
+                    <a name="//apple_ref/swift/Method/rotateGesturesEnabled(enabled:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC21rotateGesturesEnabledACSb7enabled_tF">rotateGesturesEnabled(enabled:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies whether rotate gestures should be enabled.
+ The default value is true.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rotateGesturesEnabled</span><span class="p">(</span><span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AntaresMapOptions</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true to enable rotate gestures; false to disable rotate gestures.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>this AntaresMapOptions object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC21scrollGesturesEnabledACSb7enabled_tF"></a>
+                    <a name="//apple_ref/swift/Method/scrollGesturesEnabled(enabled:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC21scrollGesturesEnabledACSb7enabled_tF">scrollGesturesEnabled(enabled:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies whether scroll gestures should be enabled.
+ The default value is true.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">scrollGesturesEnabled</span><span class="p">(</span><span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AntaresMapOptions</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true to enable scroll gestures; false to disable scroll gestures.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>this AntaresMapOptions object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC19zoomGesturesEnabledACSb7enabled_tF"></a>
+                    <a name="//apple_ref/swift/Method/zoomGesturesEnabled(enabled:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC19zoomGesturesEnabledACSb7enabled_tF">zoomGesturesEnabled(enabled:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies whether zoom gestures should be enabled.
+  The default value is true.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">zoomGesturesEnabled</span><span class="p">(</span><span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AntaresMapOptions</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true to enable zoom gestures; false to disable zoom gestures.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>this AntaresMapOptions object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC24doubleTapGesturesEnabledACSb7enabled_tF"></a>
+                    <a name="//apple_ref/swift/Method/doubleTapGesturesEnabled(enabled:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC24doubleTapGesturesEnabledACSb7enabled_tF">doubleTapGesturesEnabled(enabled:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies whether double tap gestures should be enabled.
+ The default value is true.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">doubleTapGesturesEnabled</span><span class="p">(</span><span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AntaresMapOptions</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true to enable double tap gestures; false to disable double tap gestures.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>this AntaresMapOptions object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC9getCameraAA16AMCameraPositionCSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getCamera()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC9getCameraAA16AMCameraPositionCSgyF">getCamera()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the current configured initial camera option.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCamera</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/AMCameraPosition.html">AMCameraPosition</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the camera option, or nil if unspecified.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC11getStyleUrlSSSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getStyleUrl()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC11getStyleUrlSSSgyF">getStyleUrl()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the current configured initial style url option.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getStyleUrl</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the style url option, or nil if unspecified.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC20getMinZoomPreferenceSdyF"></a>
+                    <a name="//apple_ref/swift/Method/getMinZoomPreference()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC20getMinZoomPreferenceSdyF">getMinZoomPreference()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the current configured minimum zoom level preference.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getMinZoomPreference</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the minimum zoom level preference, or nil if unspecified.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC20getMaxZoomPreferenceSdyF"></a>
+                    <a name="//apple_ref/swift/Method/getMaxZoomPreference()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC20getMaxZoomPreferenceSdyF">getMaxZoomPreference()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the current configured maximum zoom level preference.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getMaxZoomPreference</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the maximum zoom level preference, or nil if unspecified.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC24getRotateGesturesEnabledSbSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getRotateGesturesEnabled()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC24getRotateGesturesEnabledSbSgyF">getRotateGesturesEnabled()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the current configured rotate gesture enabled option.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRotateGesturesEnabled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the rotateGesturesEnabled option, or nil if unspecified.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC24getScrollGesturesEnabledSbSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getScrollGesturesEnabled()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC24getScrollGesturesEnabledSbSgyF">getScrollGesturesEnabled()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the current configured scroll gesture enabled option.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getScrollGesturesEnabled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the scrollGesturesEnabled option, or nil if unspecified.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC22getZoomGesturesEnabledSbSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getZoomGesturesEnabled()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC22getZoomGesturesEnabledSbSgyF">getZoomGesturesEnabled()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the current configured zoom gesture enabled option.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getZoomGesturesEnabled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the zoomGesturesEnabled option, or nil if unspecified.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps0A10MapOptionsC27getDoubleTapGesturesEnabledSbSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getDoubleTapGesturesEnabled()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps0A10MapOptionsC27getDoubleTapGesturesEnabledSbSgyF">getDoubleTapGesturesEnabled()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the current configured double tap gesture enabled option.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getDoubleTapGesturesEnabled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the doubleTapEnabled option, or nil if unspecified.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s9EquatableP2eeoiSbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s9EquatableP2eeoiSbx_xtFZ">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">AntaresMapOptions</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">AntaresMapOptions</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s8HashableP9hashValueSiv"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s8HashableP9hashValueSiv">hashValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s23CustomStringConvertibleP11descriptionSSv"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s23CustomStringConvertibleP11descriptionSSv">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external">AntaresNav</a>. All rights reserved. (Last updated: 2017-11-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

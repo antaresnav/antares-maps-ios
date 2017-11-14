@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AMPolyline Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/AMPolyline" class="dashAnchor"></a>
+    <a title="AMPolyline Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AMPolyline Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraPosition.html">AMCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraPosition/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraUpdate.html">AMCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCoordinateBounds.html">AMCoordinateBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCoordinateBounds/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMMapView.html">AMMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMMarker.html">AMMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMPolyline.html">AMPolyline</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMProjection.html">AMProjection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMUISettings.html">AMUISettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMVisibleRegion.html">AMVisibleRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AntaresMapOptions.html">AntaresMapOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AMMapViewDelegate.html">AMMapViewDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AMPolyline</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AMPolyline</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                </div>
+              </div>
+            <p>AMPolyline specifies the available options for a polyline that exists on the Earth&rsquo;s surface.</p>
+
+<p>It is drawn as a physical line between the points specified in setPoints/getPoints.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps10AMPolylineC11strokeColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/strokeColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps10AMPolylineC11strokeColorSo7UIColorCv">strokeColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The UIColor used to render the polyline.
+Defaults to [UIColor blueColor].</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">strokeColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">blue</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps10AMPolylineC5alphaSfv"></a>
+                    <a name="//apple_ref/swift/Property/alpha" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps10AMPolylineC5alphaSfv">alpha</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the alpha of the polyline, between 0 (completely transparent) and 1 (default) inclusive.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt">Float</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps10AMPolylineC11strokeWidthSfv"></a>
+                    <a name="//apple_ref/swift/Property/strokeWidth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps10AMPolylineC11strokeWidthSfv">strokeWidth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The width of the line in screen points.
+Defaults to 1.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">strokeWidth</span><span class="p">:</span> <span class="kt">Float</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps10AMPolylineC7visibleSbv"></a>
+                    <a name="//apple_ref/swift/Property/visible" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps10AMPolylineC7visibleSbv">visible</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Visibility of the polyline</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">visible</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps10AMPolylineC3mapAA9AMMapViewCSgv"></a>
+                    <a name="//apple_ref/swift/Property/map" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps10AMPolylineC3mapAA9AMMapViewCSgv">map</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The map this overlay is on.
+Setting this property will add the overlay to the map. Setting it to nil removes this overlay from the map.
+An overlay may be active on at most one map at any given time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">map</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMMapView.html">AMMapView</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps10AMPolylineCACSaySC22CLLocationCoordinate2DVGSg6points_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(points:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps10AMPolylineCACSaySC22CLLocationCoordinate2DVGSg6points_tcfc">init(points:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constructor for AMPolyline for a particular points.
+Other properties will have default values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">points</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps10AMPolylineC9getPointsSaySC22CLLocationCoordinate2DVGyF"></a>
+                    <a name="//apple_ref/swift/Method/getPoints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps10AMPolylineC9getPointsSaySC22CLLocationCoordinate2DVGyF">getPoints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the points that describes this polyline.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPoints</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps10AMPolylineC9setPointsySaySC22CLLocationCoordinate2DVG6points_tF"></a>
+                    <a name="//apple_ref/swift/Method/setPoints(points:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps10AMPolylineC9setPointsySaySC22CLLocationCoordinate2DVG6points_tF">setPoints(points:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the points that describes this polyline.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setPoints</span><span class="p">(</span><span class="nv">points</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s9EquatableP2eeoiSbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s9EquatableP2eeoiSbx_xtFZ">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">AMPolyline</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">AMPolyline</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s8HashableP9hashValueSiv"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s8HashableP9hashValueSiv">hashValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external">AntaresNav</a>. All rights reserved. (Last updated: 2017-11-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

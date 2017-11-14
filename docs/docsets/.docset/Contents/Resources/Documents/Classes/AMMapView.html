@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AMMapView Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/AMMapView" class="dashAnchor"></a>
+    <a title="AMMapView Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AMMapView Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraPosition.html">AMCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraPosition/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraUpdate.html">AMCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCoordinateBounds.html">AMCoordinateBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCoordinateBounds/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMMapView.html">AMMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMMarker.html">AMMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMPolyline.html">AMPolyline</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMProjection.html">AMProjection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMUISettings.html">AMUISettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMVisibleRegion.html">AMVisibleRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AntaresMapOptions.html">AntaresMapOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AMMapViewDelegate.html">AMMapViewDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AMMapView</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">@IBDesignable</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AMMapView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="kt">SKGLViewDelegate</span><span class="p">,</span> <span class="kt">RenderRequestDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>This is the main class of the AntaresMaps SDK for iOS and is the entry point for all methods related to the map.</p>
+
+<p>The map should be instantiated via the convenience constructor [AMMapView mapWithFrame:camera:].
+ It may also be created with the default [[AMMapView alloc] initWithFrame:] method (wherein its camera
+ will be set to a default location).</p>
+
+<p>AMMapView can only be read and modified from the main thread, similar to all UIKit objects. Calling these
+ methods from another thread will result in an exception or undefined behavior.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps9AMMapViewC10projectionAA12AMProjectionCv"></a>
+                    <a name="//apple_ref/swift/Property/projection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps9AMMapViewC10projectionAA12AMProjectionCv">projection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a AMProjection object that you can use to convert between screen coordinates and
+latitude/longitude coordinates.
+This is a snapshot of the current projection, and will not automatically update when the camera moves.
+It represents either the projection of the last drawn AMMapView frame, or; where the camera has
+been explicitly set or the map just created, the upcoming frame. It will never be nil.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">projection</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMProjection.html">AMProjection</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps9AMMapViewC8settingsAA12AMUISettingsCSgv"></a>
+                    <a name="//apple_ref/swift/Property/settings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps9AMMapViewC8settingsAA12AMUISettingsCSgv">settings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the AMUISettings object, which controls user interface settings for the map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMUISettings.html">AMUISettings</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps9AMMapViewC6cameraAA16AMCameraPositionCv"></a>
+                    <a name="//apple_ref/swift/Property/camera" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps9AMMapViewC6cameraAA16AMCameraPositionCv">camera</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Controls the camera, which defines how the map is oriented.
+Modification of this property is instantaneous.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">camera</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMCameraPosition.html">AMCameraPosition</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AntaresMaps@objc(cs)AMMapView(py)minZoom"></a>
+                    <a name="//apple_ref/swift/Property/minZoom" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AntaresMaps@objc(cs)AMMapView(py)minZoom">minZoom</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Minimum zoom (the farthest the camera may be zoomed out).
+Modified with -setMinZoom:maxZoom:.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">minZoom</span><span class="p">:</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AntaresMaps@objc(cs)AMMapView(py)maxZoom"></a>
+                    <a name="//apple_ref/swift/Property/maxZoom" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AntaresMaps@objc(cs)AMMapView(py)maxZoom">maxZoom</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maximum zoom (the closest the camera may be to the Earth).
+Modified with -setMinZoom:maxZoom:.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">maxZoom</span><span class="p">:</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps9AMMapViewC3mapACSC6CGRectV5frame_AA16AMCameraPositionC6cameratFZ"></a>
+                    <a name="//apple_ref/swift/Method/map(frame:camera:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps9AMMapViewC3mapACSC6CGRectV5frame_AA16AMCameraPositionC6cameratFZ">map(frame:camera:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Builds and returns a AMMapView, with a frame and camera target.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">map</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">camera</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMCameraPosition.html">AMCameraPosition</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AMMapView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AntaresMaps@objc(cs)AMMapView(im)setCenterAnchorWithCenterAnchorU:centerAnchorV:"></a>
+                    <a name="//apple_ref/swift/Method/setCenterAnchor(centerAnchorU:centerAnchorV:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AntaresMaps@objc(cs)AMMapView(im)setCenterAnchorWithCenterAnchorU:centerAnchorV:">setCenterAnchor(centerAnchorU:centerAnchorV:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Beta</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setCenterAnchor</span><span class="p">(</span><span class="nv">centerAnchorU</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">centerAnchorV</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AntaresMaps@objc(cs)AMMapView(im)getCenterAnchorU"></a>
+                    <a name="//apple_ref/swift/Method/getCenterAnchorU()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AntaresMaps@objc(cs)AMMapView(im)getCenterAnchorU">getCenterAnchorU()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Beta</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCenterAnchorU</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AntaresMaps@objc(cs)AMMapView(im)getCenterAnchorV"></a>
+                    <a name="//apple_ref/swift/Method/getCenterAnchorV()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AntaresMaps@objc(cs)AMMapView(im)getCenterAnchorV">getCenterAnchorV()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Beta</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCenterAnchorV</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps9AMMapViewC10moveCamerayAA14AMCameraUpdateC6update_tF"></a>
+                    <a name="//apple_ref/swift/Method/moveCamera(update:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps9AMMapViewC10moveCamerayAA14AMCameraUpdateC6update_tF">moveCamera(update:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Repositions the camera according to the instructions defined in the update. The move is
+ instantaneous, and a subsequent camera will reflect the new position.</p>
+
+<p>See AMCameraUpdate for a set of updates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">moveCamera</span><span class="p">(</span><span class="nv">update</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMCameraUpdate.html">AMCameraUpdate</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>update</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The change that should be applied to the camera.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps9AMMapViewC23animateWithCameraUpdateyAA08AMCameraH0C6update_tF"></a>
+                    <a name="//apple_ref/swift/Method/animateWithCameraUpdate(update:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps9AMMapViewC23animateWithCameraUpdateyAA08AMCameraH0C6update_tF">animateWithCameraUpdate(update:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Animates the movement of the camera from the current position to the position defined in
+ the update. During the animation, a call to camera returns an intermediate
+ location of the camera.</p>
+
+<p>See AMCameraUpdate for a set of updates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">func</span> <span class="nf">animateWithCameraUpdate</span><span class="p">(</span><span class="nv">update</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMCameraUpdate.html">AMCameraUpdate</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>update</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The change that should be applied to the camera.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AntaresMaps@objc(cs)AMMapView(im)setMinZoomWithMinZoom:maxZoom:"></a>
+                    <a name="//apple_ref/swift/Method/setMinZoom(minZoom:maxZoom:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AntaresMaps@objc(cs)AMMapView(im)setMinZoomWithMinZoom:maxZoom:">setMinZoom(minZoom:maxZoom:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets minZoom and maxZoom.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setMinZoom</span><span class="p">(</span><span class="nv">minZoom</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">maxZoom</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AntaresMaps@objc(cs)AMMapView(im)getStyleUrl"></a>
+                    <a name="//apple_ref/swift/Method/getStyleUrl()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AntaresMaps@objc(cs)AMMapView(im)getStyleUrl">getStyleUrl()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the URL of the map style currently displayed in the map view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getStyleUrl</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The URL of the map style.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AntaresMaps@objc(cs)AMMapView(im)setStyleUrlWithStyleUrl:"></a>
+                    <a name="//apple_ref/swift/Method/setStyleUrl(styleUrl:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AntaresMaps@objc(cs)AMMapView(im)setStyleUrlWithStyleUrl:">setStyleUrl(styleUrl:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads a new map style from the specified URL. This method is asynchronous and will return
+ immediately before the style finishes loading.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setStyleUrl</span><span class="p">(</span><span class="nv">styleUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>styleUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL of the map style</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AntaresMaps@objc(cs)AMMapView(im)refreshStyle"></a>
+                    <a name="//apple_ref/swift/Method/refreshStyle()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AntaresMaps@objc(cs)AMMapView(im)refreshStyle">refreshStyle()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Refreshes the style from the style URL.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshStyle</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external">AntaresNav</a>. All rights reserved. (Last updated: 2017-11-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

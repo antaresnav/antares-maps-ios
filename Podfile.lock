@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AntaresMaps (0.0.2):
+    - Alamofire (~> 4.4)
+    - GzipSwift
+    - ProtocolBuffers-Swift
+    - SQLite.swift (~> 0.11.4)
+    - SwiftyJSON
+    - Track
+  - GzipSwift (4.0.0)
+  - ProtocolBuffers-Swift (3.0.24)
+  - SQLite.swift (0.11.4):
+    - SQLite.swift/standard (= 0.11.4)
+  - SQLite.swift/standard (0.11.4)
+  - SwiftyJSON (3.1.4)
+  - Track (2.0.0)
+
+DEPENDENCIES:
+  - AntaresMaps (~> 0.0.2)
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AntaresMaps: d64d3af9f3fdbae9b388167400f8a87034c66c96
+  GzipSwift: 1aab4a3d3b2f2509f78c7405bbaf535184ac6c7f
+  ProtocolBuffers-Swift: 42ad3864cb1d09dd544589742d585d553dcdff2c
+  SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  Track: 45590b4545034d30f61622e82bef0534b168d9a9
+
+PODFILE CHECKSUM: 5a156a0e115f507f248369d3a9620fb8debe3c3b
+
+COCOAPODS: 1.3.1

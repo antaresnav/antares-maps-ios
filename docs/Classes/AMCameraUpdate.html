@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AMCameraUpdate Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/AMCameraUpdate" class="dashAnchor"></a>
+    <a title="AMCameraUpdate Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AMCameraUpdate Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraPosition.html">AMCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraPosition/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCameraUpdate.html">AMCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCoordinateBounds.html">AMCoordinateBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMCoordinateBounds/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMMapView.html">AMMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMMarker.html">AMMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMPolyline.html">AMPolyline</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMProjection.html">AMProjection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMUISettings.html">AMUISettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AMVisibleRegion.html">AMVisibleRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AntaresMapOptions.html">AntaresMapOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AMMapViewDelegate.html">AMMapViewDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AMCameraUpdate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AMCameraUpdate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Defines a camera move. An object of this type can be used to modify a map&rsquo;s camera by calling
+ animateCamera(AMCameraUpdate) or
+ moveCamera(AMCameraUpdate).</p>
+
+<p>For example, to zoom in on a map, you can use the following code:</p>
+
+<p>AMMapView map = &hellip;;
+   map.animateCamera(AMCameraUpdate.zoomIn())</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps14AMCameraUpdateC17newCameraPositionAcA0cG0C06cameraG0_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/newCameraPosition(cameraPosition:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps14AMCameraUpdateC17newCameraPositionAcA0cG0C06cameraG0_tFZ">newCameraPosition(cameraPosition:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a AMCameraUpdate that moves the camera to a specified AMCameraPosition. In effect,
+ this creates a transformation from the AMCameraPosition object&rsquo;s latitude, longitude,
+ zoom level and bearing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">newCameraPosition</span><span class="p">(</span><span class="nv">cameraPosition</span><span class="p">:</span> <span class="kt"><a href="../Classes/AMCameraPosition.html">AMCameraPosition</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AMCameraUpdate</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cameraPosition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A AMCameraPosition object containing the desired camera values.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A AMCameraUpdate containing the transformation.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps14AMCameraUpdateC9newLatLngACSC22CLLocationCoordinate2DV03latG0_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/newLatLng(latLng:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps14AMCameraUpdateC9newLatLngACSC22CLLocationCoordinate2DV03latG0_tFZ">newLatLng(latLng:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a AMCameraUpdate that moves the center of the screen to a latitude and longitude
+ specified by a CLLocationCoordinate2D object. This centers the camera on the LatLng object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">newLatLng</span><span class="p">(</span><span class="nv">latLng</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AMCameraUpdate</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>latLng</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A CLLocationCoordinate2D object containing the desired latitude and longitude.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>AMCameraUpdate Final Camera Position</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps14AMCameraUpdateC13newLatLngZoomACSC22CLLocationCoordinate2DV03latG0_Sd4zoomtFZ"></a>
+                    <a name="//apple_ref/swift/Method/newLatLngZoom(latLng:zoom:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps14AMCameraUpdateC13newLatLngZoomACSC22CLLocationCoordinate2DV03latG0_Sd4zoomtFZ">newLatLngZoom(latLng:zoom:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a AMCameraUpdate that moves the center of the screen to a latitude and longitude
+ specified by a CLLocationCoordinate2D object, and moves to the given zoom level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">newLatLngZoom</span><span class="p">(</span><span class="nv">latLng</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">,</span> <span class="nv">zoom</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AMCameraUpdate</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>latLng</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A CLLocationCoordinate2D object containing the desired latitude and longitude.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zoom</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired zoom level</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A AMCameraUpdate containing the transformation.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps14AMCameraUpdateC8scrollByACSf6xPixel_Sf01yG0tFZ"></a>
+                    <a name="//apple_ref/swift/Method/scrollBy(xPixel:yPixel:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps14AMCameraUpdateC8scrollByACSf6xPixel_Sf01yG0tFZ">scrollBy(xPixel:yPixel:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a AMCameraUpdate that scrolls the camera over the map, shifting the center of view
+ by the specified number of pixels in the x and y directions.</p>
+
+<p>Examples:</p>
+
+<ul>
+<li>If xPixel = 5 and yPixel = 0, the system scrolls right by moving the camera so that
+the map appears to have shifted 5 pixels to the left.</li>
+<li>If xPixel = 0 and yPixel = 5, the system scrolls down by moving the camera so that
+the map appears to have shifted 5 pixels upwards.</li>
+</ul>
+
+<p>The scrolling is relative to the camera&rsquo;s current orientation. For example, if the camera
+ is bearing 90 degrees, then east is <q>up</q> and scrolling right will move the camera south.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">scrollBy</span><span class="p">(</span><span class="nv">xPixel</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">yPixel</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AMCameraUpdate</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>xPixel</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of pixels to scroll horizontally. A positive value moves the camera
+           to the right, with respect to its current orientation. A negative value moves
+           the camera to the left, with respect to its current orientation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>yPixel</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of pixels to scroll vertically. A positive value moves the camera
+           downwards, with respect to its current orientation. A negative value moves
+           the camera upwards, with respect to its current orientation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A AMCameraUpdate containing the transformation.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps14AMCameraUpdateC6zoomByACSd6amount_SC7CGPointV5focustFZ"></a>
+                    <a name="//apple_ref/swift/Method/zoomBy(amount:focus:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps14AMCameraUpdateC6zoomByACSd6amount_SC7CGPointV5focustFZ">zoomBy(amount:focus:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a AMCameraUpdate that shifts the zoom level of the current camera viewpoint.</p>
+
+<p>A point specified by focus will remain fixed (i.e., it corresponds to the same lat/long both
+ before and after the zoom process).</p>
+
+<p>This method is different to zoomTo(float) in that zoom is relative to the current camera.</p>
+
+<p>For example, if the CLLocationCoordinate2D (11.11, 22.22) is currently at the screen location (23, 45).
+ After calling this method with a zoom amount and this LatLng, the screen location of this
+ CLLocationCoordinate2D will still be (23, 45).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">zoomBy</span><span class="p">(</span><span class="nv">amount</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">focus</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AMCameraUpdate</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>amount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Amount to change the zoom level. Positive values indicate zooming closer to
+           the surface of the Earth while negative values indicate zooming away from
+           the surface of the Earth.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>focus</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Pixel location on the screen that is to remain fixed after the zooming process.
+           The lat/long that was at that pixel location before the camera move will remain
+           the same after the camera has moved.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A AMCameraUpdate containing the transformation.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps14AMCameraUpdateC6zoomByACSd6amount_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/zoomBy(amount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps14AMCameraUpdateC6zoomByACSd6amount_tFZ">zoomBy(amount:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a AMCameraUpdate that shifts the zoom level of the current camera viewpoint.</p>
+
+<p>This method is different to zoomTo(float) in that zoom is relative to the current camera.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">zoomBy</span><span class="p">(</span><span class="nv">amount</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AMCameraUpdate</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>amount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Amount to change the zoom level. Positive values indicate zooming closer to
+           the surface of the Earth while negative values indicate zooming away from
+           the surface of the Earth.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A AMCameraUpdate containing the transformation.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps14AMCameraUpdateC6zoomInACyFZ"></a>
+                    <a name="//apple_ref/swift/Method/zoomIn()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps14AMCameraUpdateC6zoomInACyFZ">zoomIn()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a AMCameraUpdate that zooms in on the map by moving the viewpoint&rsquo;s height
+ closer to the Earth&rsquo;s surface. The zoom increment is 1.0.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">zoomIn</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">AMCameraUpdate</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A AMCameraUpdate containing the transformation.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps14AMCameraUpdateC7zoomOutACyFZ"></a>
+                    <a name="//apple_ref/swift/Method/zoomOut()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps14AMCameraUpdateC7zoomOutACyFZ">zoomOut()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a AMCameraUpdate that zooms out on the map by moving the viewpoint&rsquo;s height
+ farther away from the Earth&rsquo;s surface. The zoom increment is -1.0.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">zoomOut</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">AMCameraUpdate</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A AMCameraUpdate containing the transformation.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AntaresMaps14AMCameraUpdateC6zoomToACSd0E0_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/zoomTo(zoom:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AntaresMaps14AMCameraUpdateC6zoomToACSd0E0_tFZ">zoomTo(zoom:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a AMCameraUpdate that moves the camera viewpoint to a particular zoom level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">zoomTo</span><span class="p">(</span><span class="nv">zoom</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AMCameraUpdate</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zoom</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired zoom level</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A AMCameraUpdate containing the transformation.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external">AntaresNav</a>. All rights reserved. (Last updated: 2017-11-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

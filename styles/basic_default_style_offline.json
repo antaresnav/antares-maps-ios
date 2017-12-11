@@ -305,7 +305,6 @@
         ]
       ],
       "layout": {
-      //  "line-cap": "square",
         "line-join": "bevel"
       },
       "paint": {
